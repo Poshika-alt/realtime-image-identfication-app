@@ -15,7 +15,7 @@ image(video,0,0,300,300);
 classifier.classify(video,gotResult);
 }
 
-function gotResult(){
+function gotResult(error,results){
     if(error){
         console.log(error);
     }
